@@ -11,30 +11,26 @@ const divisao = document.querySelector(".number_divisao")
 const point = document.querySelector(".number_point")
 const reset = document.getElementById("reset")
 const igual = document.getElementById("igual")
-
+console.log(igual)
 //functions
+
+function calculate() {
+    return valueBtn + valueBtn
+}
 
 number.forEach(Element =>{
     Element.addEventListener("click", (e) =>{
         const valueBtn = e.target.innerText;
         valueScreen.innerText += valueBtn 
-            soma.addEventListener("click", (s) => {
-                if(s) {
-                    valueScreen.innerText = valueBtn + "+"
-                }
-        })
     })
 })
 
-function calculate(cal) {
-    const somatoria = valueBtn + valueBtn
-}
 
-del.addEventListener("click", () => {
+reset.addEventListener("click", () => {
     valueScreen.textContent = ""
 })
 
 igual.addEventListener("click", () => {
-    cal()
+    valueScreen.textContent = eval(valueScreen.textContent)
 })
 
