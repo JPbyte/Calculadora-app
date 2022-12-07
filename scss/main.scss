@@ -1,3 +1,4 @@
+
 //Theme 1
 
 //Backgrounds
@@ -66,7 +67,7 @@ body{
         #container{
             width: 100%;
             max-width: 40rem;
-            height: 48rem;
+            height: 52rem;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -115,34 +116,22 @@ body{
                                             padding: 0.25rem 0.5rem;
                                             border-radius: 3.12rem;
                                             background-color: $Very-dark-desaturated-blue3;
-                                                #one{
+                                                #theme_click{
                                                     width: 100%;
                                                     height: 2rem;
                                                     background: $Red;
                                                     border-radius: 1rem;
+                                                    cursor: pointer;
                                                     border: none;
                                                 }
-                                                #two{
-                                                    width: 100%;
-                                                    height: 2rem;
-                                                    background-color: $Orange;
-                                                    border-radius: 1rem;
-                                                    border: none;
-                                                    opacity: 0;
-                                                }
-                                                #three{
-                                                    width: 100%;
-                                                    height: 2rem;
-                                                    background-color: $Soft-cyan;
-                                                    border-radius: 1rem;
-                                                    border: none;
+                                                #theme_click:nth-child(1n + 2){
                                                     opacity: 0;
                                                 }
                                         }
                                 }
                         }
                 }
-                #value{
+                .screen_value{
                     width: 100%;
                     max-width: 39rem;
                     height: 9rem;
@@ -153,11 +142,18 @@ body{
                     padding: 0rem 3rem;
                     border: none;
                     border-radius: 0.70rem;
+                    position: relative;
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
+                        #value{
+                            width: 100%;
+                        }
                 }
                 #toggle{
                     width: 100%;
                     max-width: 39rem;
-                    height: 30rem;
+                    height: 33rem;
                     padding: 2rem;
                     gap: 1.5rem;
                     background-color: $Very-dark-desaturated-blue2;
@@ -165,7 +161,7 @@ body{
                     border-radius: 0.70rem;
                     display: grid;
                     grid-template-columns: repeat(4, 1fr);
-                        .number, .number_point, .number_barra, .number_del, .number_soma, .number_sub, .number_multiplicacao {
+                        .number, .number_divisao, .number_del, .number_soma, .number_sub, .number_multiplicacao {
                             width: 100%;
                             height: 4rem;
                             background-color: $Light-grayish-orange;
@@ -178,7 +174,6 @@ body{
                             transition: 0.2s;
                                 &:hover{
                                     background-color: $White;
-                                    transform: scale(1.01);
                                 }
                         }
                         .number_del{
@@ -190,7 +185,6 @@ body{
                                 &:hover{
                                     background-color: $Desaturated-dark-blue1;
                                     opacity: 0.8;
-                                    transform: scale(1.01);
                                 }
                         }
                         #reset{
@@ -207,7 +201,6 @@ body{
                             transition: 0.2s;
                                 &:hover{
                                     opacity: 0.8;
-                                    transform: scale(1.01);
                                 }
                         }
                         #igual{
@@ -223,7 +216,6 @@ body{
                             transition: 0.2s;
                                 &:hover{
                                     opacity: 0.8;
-                                    transform: scale(1.01);
                                 }   
                         }
                 }
