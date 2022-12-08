@@ -42,8 +42,8 @@ Desktop design
 
 ### Links
 
-- Solution URL: [Calculator app solution]()
-- Live Site URL: []()
+- Solution URL: [Calculator app solution](https://www.frontendmentor.io/solutions/calculator-app-5IeD5uW117)
+- Live Site URL: [](https://jpbyte.github.io/Calculadora-app/)
 
 ## My process
 
