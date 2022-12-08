@@ -1,5 +1,6 @@
 //variables
-
+const body =  document.querySelector("body")
+const container = document.getElementById("container")
 const themeSelect = document.querySelectorAll("#theme_click")
 const valueScreen = document.querySelector("#value")
 const number = document.querySelectorAll(".number")
@@ -11,12 +12,8 @@ const divisao = document.querySelector(".number_divisao")
 const point = document.querySelector(".number_point")
 const reset = document.getElementById("reset")
 const igual = document.getElementById("igual")
-console.log(igual)
-//functions
 
-function calculate() {
-    return valueBtn + valueBtn
-}
+//functions
 
 number.forEach(Element =>{
     Element.addEventListener("click", (e) =>{
@@ -32,5 +29,11 @@ reset.addEventListener("click", () => {
 
 igual.addEventListener("click", () => {
     valueScreen.textContent = eval(valueScreen.textContent)
+})
+
+themeSelect[1].addEventListener("click", () => {
+    themeSelect[0].style.opacity = "0"
+    themeSelect[1].style.opacity = "1"
+    body.style.backgroundColor = "red"
 })
 
