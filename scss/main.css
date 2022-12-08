@@ -168,4 +168,21 @@ body #container #toggle #igual {
 }
 body #container #toggle #igual:hover {
   opacity: 0.8;
+}
+@media (max-width: 700px) {
+  body {
+    padding: 0.4rem;
+  }
+  body #container .calc_theme .theme {
+    max-width: 12rem;
+  }
+  body #container .screen_value {
+    font-size: 2.5rem;
+  }
+  body #container #toggle {
+    padding: 1rem;
+  }
+  body #container #toggle .number, body #container #toggle .number_del, body #container #toggle #reset, body #container #toggle #igual {
+    font-size: 1.4rem;
+  }
 }/*# sourceMappingURL=main.css.map */

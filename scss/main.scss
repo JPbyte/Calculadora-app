@@ -30,7 +30,7 @@ $Dark-orange: hsl(25, 99%, 27%);
 $Light-grayish-yellow: hsl(45, 7%, 89%);
 $Dark-grayish-orange: hsl(35, 11%, 61%);
 //Text
-$Very-dark-grayish-yellow: hsl(60, 10%, 19%);
+$Very-dark-grayish-yellow: hsl(60, 9%, 19%);
 $White: hsl(0, 0%, 100%);
 
 //Theme 3
@@ -220,4 +220,23 @@ body{
                         }
                 }
         }
+@media (max-width: 700px) {
+    padding: 0.40rem;
+        #container{
+            .calc_theme{
+                .theme{
+                    max-width: 12rem;
+                }
+            }
+            .screen_value{
+                font-size: 2.5rem;
+            }
+            #toggle{
+                padding: 1rem;
+                    .number, .number_del, #reset, #igual{
+                        font-size: 1.4rem;
+                    }
+            }
+        }
+}
 }
