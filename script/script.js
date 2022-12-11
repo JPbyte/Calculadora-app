@@ -7,7 +7,7 @@ const themeText = document.querySelector(".theme_text")
 const tela = document.querySelector(".screen_value")
 const option = document.getElementById("switch_option")
 
-const themeSelect = document.querySelectorAll("#theme_click")
+const themeSelect = document.querySelectorAll(".theme_click")
 const valueScreen = document.querySelector("#value")
 const number = document.querySelectorAll(".number")
 const del = document.querySelector(".number_del")

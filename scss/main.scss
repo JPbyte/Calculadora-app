@@ -116,7 +116,7 @@ body{
                                             padding: 0.25rem 0.5rem;
                                             border-radius: 3.12rem;
                                             background-color: $Very-dark-desaturated-blue3;
-                                                #theme_click{
+                                                .theme_click{
                                                     width: 100%;
                                                     height: 2rem;
                                                     background: $Red;
@@ -124,7 +124,7 @@ body{
                                                     cursor: pointer;
                                                     border: none;
                                                 }
-                                                #theme_click:nth-child(1n + 2){
+                                                .theme_click:nth-child(1n + 2){
                                                     opacity: 0;
                                                 }
                                         }
